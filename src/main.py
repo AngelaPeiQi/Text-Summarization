@@ -18,7 +18,7 @@ with codecs.open(r'../data/vocab2.txt', 'r', 'utf-8') as f:
 V = vocab
 print(len(V))
 
-golds, texts = get_golds(tests)  # references
+golds, texts = get_golds(tests)  
 
 results = pr_summ_exact(tests, 10)
 
